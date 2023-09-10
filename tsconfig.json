@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    //запрещает юз переменных без типа
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    //чтобы обычные импорты работали как common js (requier())
+    "esModuleInterop": true,
+    //дружит библиотеки, не поддерживающие export default, с данной функцией, т.к. большинство node библиотек не поддерживают его.
+    //т.е. превращает `import * as something from '...'` в `import something from '...'`
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
