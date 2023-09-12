@@ -9,6 +9,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     //чтобы обычные импорты работали как common js (requier())
     "esModuleInterop": true,
     //дружит библиотеки, не поддерживающие export default, с данной функцией, т.к. большинство node библиотек не поддерживают его.
