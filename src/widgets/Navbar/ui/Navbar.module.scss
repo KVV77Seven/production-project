@@ -1,20 +1,21 @@
 .navbar {
-  width: 100%;
-  height: var(--navbar-height);
-  background: var(--inverted-bg-color);
-  display: flex;
-  align-items: center;
-  padding: 20px;
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--inverted-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .link {
-  margin-left: 10px;
-  color: var(--inverted-primary-color);
-  &:first-child {
-    margin-left: 0;
-  }
+    margin-left: 10px;
+    color: var(--inverted-primary-color);
+
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 .links {
-  margin-left: auto;
+    margin-left: auto;
 }
