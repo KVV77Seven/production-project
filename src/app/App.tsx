@@ -7,6 +7,7 @@ import { LangSwitcher } from 'widgets/LangSwitcher'
 
 const App = () => {
     const { theme } = useTheme()
+
     return (
         <div className={`app ${theme}`}>
             <Suspense fallback="">

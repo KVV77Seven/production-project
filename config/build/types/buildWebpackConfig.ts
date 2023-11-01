@@ -10,6 +10,10 @@ export function buildWebpackConfig (options: BuildOptions): webpack.Configuratio
         mode: options.mode,
         entry: options.paths.entry,
         resolve: buildResolves(options),
+        performance: {
+            maxEntrypointSize: 512000,
+            maxAssetSize: 512000
+        },
         output: {
             filename: '[name].[contenthash].js',
             path: options.paths.build,

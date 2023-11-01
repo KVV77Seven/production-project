@@ -40,6 +40,8 @@ module.exports = {
         "react/no-deprecated": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/naming-convention": "off"
+        "@typescript-eslint/naming-convention": "off",
+        "semi": ["error", "always"],
+        "@typescript-eslint/semi": ["error", "always"]
     }
 }

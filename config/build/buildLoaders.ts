@@ -22,7 +22,8 @@ export function buildLoaders (options: BuildOptions): webpack.RuleSetRule[] {
     const scssLoader = {
         test: /\.s[ac]ss$/i,
         use: [
-            options.isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+            // options.isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'style-loader',
             {
                 loader: 'css-loader',
                 options: {
