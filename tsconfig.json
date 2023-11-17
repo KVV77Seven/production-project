@@ -22,5 +22,13 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts",
+    "./.eslintrc.js",
+    "./config/build/types/buildWebpackConfig.ts",
+    "./src/app/types/global.d.ts",
+    "src/**/*.tsx", // Adjust this path to match the structure of your project
+    "src/**/*.ts"
+  ]
 }

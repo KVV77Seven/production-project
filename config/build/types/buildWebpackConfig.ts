@@ -1,9 +1,9 @@
-import { type BuildOptions } from './config'
-import type webpack from 'webpack'
-import { buildResolves } from '../buildResolves'
-import { buildLoaders } from '../buildLoaders'
-import { buildPlugins } from '../buildPlugins'
-import { buildDevServer } from '../buildDevServer'
+import { type BuildOptions } from './config';
+import type webpack from 'webpack';
+import { buildResolves } from '../buildResolves';
+import { buildLoaders } from '../buildLoaders';
+import { buildPlugins } from '../buildPlugins';
+import { buildDevServer } from '../buildDevServer';
 
 export function buildWebpackConfig (options: BuildOptions): webpack.Configuration {
     return {
@@ -25,5 +25,5 @@ export function buildWebpackConfig (options: BuildOptions): webpack.Configuratio
         plugins: buildPlugins(options),
         devtool: options.isDev ? 'inline-source-map' : undefined,
         devServer: options.isDev ? buildDevServer(options) : undefined
-    }
+    };
 }
